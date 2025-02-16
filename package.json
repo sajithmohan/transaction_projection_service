@@ -1,0 +1,22 @@
+{
+  "name": "transaction_projection_service",
+  "version": "1.0.0",
+  "description": "service uses transactions recorded events and project it for customer transaction apis",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -w -p tsconfig.json",
+    "start": "node build/index.js",
+    "dev": "nodemon build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "nodemon": "^3.1.9",
+    "typescript": "^5.7.3"
+  }
+}
