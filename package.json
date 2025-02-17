@@ -4,19 +4,25 @@
   "description": "service uses transactions recorded events and project it for customer transaction apis",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -w -p tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "start": "node build/index.js",
     "dev": "nodemon build/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --detectOpenHandles"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "fastify": "^5.2.1"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.13.4",
+    "jest": "^29.7.0",
+    "nock": "^14.0.1",
     "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
 }
